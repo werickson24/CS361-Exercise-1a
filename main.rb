@@ -10,7 +10,7 @@ def createPlayers
 	print "create players called\n"
 	player_array = []
 	rand = Random.new
-	for i in 0...50
+	50.times do |i|
 		player_array[i] = Player.new("Player #{i + 1}", rand(10..300))
 	end
 	return player_array
